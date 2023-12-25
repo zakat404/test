@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>WakeApp Test Task</title>
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="preloader__ring"></div>
+  </div>
+  <div class="wrapper">
+    <div class="menu-mobile" id="menuMobile">
+      <span class="close">&times;</span>
+      <nav class="nav-mobile">
+        <menu class="nav-mobile__list">
+          <li class="nav-mobile__item"><a href="#games" class="nav__link">Games</a></li>
+          <li class="nav-mobile__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+          <li class="nav-mobile__item"><a href="#termsofuse" class="nav__link">Terms of Use</a></li>
+          <li class="nav-mobile__item"><a href="#about" class="nav__link">About</a></li>
+        </menu>
+      </nav>
+      <div class="menu-mobile__actions">
+        <a href="#" data-modal="signup" class="menu-mobile__link openSignup">Sign up</a>
+        <a href="#" data-modal="login" class="button button--grad">Log in</a>
+      </div>
+    </div>
+    <header class="header" id="header">
+      <div class="header__inner">
+        <a href="/" class="header__logo"><img src="images/logo.svg" alt="logo" class="header__logo-image"></a>
+        <div class="header__resp">
+          <nav class="nav header__nav">
+            <menu class="nav__list">
+              <li class="nav__item"><a href="#games" class="nav__link">Games</a></li>
+              <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+              <li class="nav__item"><a href="#termsofuse" class="nav__link">Terms of Use</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            </menu>
+          </nav>
+          <div class="header__actions">
+            <a href="#" data-modal="signup" class="header__link openSignup">Sign up</a>
+            <a href="#" data-modal="login" class="button button--grad">Log in</a>
+          </div>
+        </div>
+        <button type="button" class="header__mobile-btn" id="menuBtn"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="hero__inner">
+          <h1 class="hero__title">Awesome html5 games - no money!</h1>
+          <p class="hero__subtitle">Your perfect place to get some fun and excitement</p>
+          <div class="hero__buttons">
+            <a href="#" data-modal="login" class="button button--tp hero__button">Log in</a>
+            <a href="#play" class="button button--grad hero__button">Play</a>
+          </div>
+          <div class="signup-form hero__signup-form">
+            <div class="signup-form__top">
+              <h2 class="signup-form__title">create a free account now</h2>
+              <ul class="signup-form__features features">
+                <li class="features__item"><img src="images/AboutUs_Dice_75x75__1_ 3.png" alt="icon 1" class="features__icon"><p class="features__text">1000+ Games Available</p></li>
+                <li class="features__item"><img src="images/AboutUs_Dice_75x75__1_ 1.png" alt="icon 2" class="features__icon"><p class="features__text">New Game Every Week</p></li>
+                <li class="features__item"><img src="images/AboutUs_Dice_75x75__1_ 2.png" alt="icon 3" class="features__icon"><p class="features__text">Support Our Users 24/7</p></li>
+              </ul>
+            </div>
+            <form class="signup-form__inner form">
+              <div class="form__row">
+                <div class="form__fields">
+                  <input class="form__input" type="text" name="fname" id="fname" placeholder="Firstname" required>
+                  <input class="form__input" type="text" name="lname" id="lname" placeholder="Lastname" required>
+                  <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" required>
+                  <fieldset class="form__terms">
+                    <label for="terms" class="checkbox">
+                      <input class="checkbox__input" type="checkbox" name="terms" id="terms" required>
+                      <span class="checkbox__check"></span>
+                    </label>
+                    <span class="form__accept">I Accept The <a href="#" class="form__link">Privacy Policy</a></span>
+                  </fieldset>
+                </div>
+                <button type="submit" class="button button--grad form__button">Join Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="games section" id="games">
+        <div class="section__inner">
+          <div class="section__row">
+            <div class="section__header">
+              <h2 class="section__title">Our Games</h2>
+              <p class="section__subtitle">Get Virtual Welcome bonus after Sign Up</p>
+            </div>
+            <a href="#allgames" class="games__link">All Games</a>
+          </div>
+          <div class="games__grid">
+            <div class="games__col">
+              <ul class="games__tiles">
+                <li class="card card-1-3 card-mob-1-2">
+                  <a href="#" class="card__inner">
+                    <div class="card__image-container">
+                      <img src="images/game1.jpg" alt="Double Jackpot image" class="card__image">
+                    </div>
+                    <div class="card__content">
+                      <div class="card__text">
+                        <h3 class="card__title">Double Jackpot</h3>
+                        <p class="card__firm">NetentGames</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="card card-1-3 card-mob-1-2">
+                  <a href="#" class="card__inner">
+                    <div class="card__image-container">
+                      <img src="images/game2.jpg" alt="All Aboard: Dynamite Dash image" class="card__image">
+                    </div>
+                    <div class="card__content">
+                      <div class="card__text">
+                        <h3 class="card__title">All Aboard: Dynamite Dash</h3>
+                        <p class="card__firm">RushGameStudio</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="card card-1-3 card-mob-1-2">
+                  <a href="#" class="card__inner">
+                    <div class="card__image-container">
+                      <img src="images/game3.jpg" alt="Book Of Tomb image" class="card__image">
+                    </div>
+                    <div class="card__content">
+                      <div class="card__text">
+                        <h3 class="card__title">Book Of Tomb</h3>
+                        <p class="card__firm">NetentGames</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="card card-1-3 card-mob-1-2">
+                  <a href="#" class="card__inner">
+                    <div class="card__image-container">
+                      <img src="images/game4.jpg" alt="Rudolph's Ride image" class="card__image">
+                    </div>
+                    <div class="card__content">
+                      <div class="card__text">
+                        <h3 class="card__title">Rudolph's Ride</h3>
+                        <p class="card__firm">NetentGames</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="card card-1-3 card-mob-1-2">
+                  <a href="#" class="card__inner">
+                    <div class="card__image-container">
+                      <img src="images/game5.jpg" alt="Starburst XXXTreme image" class="card__image">
+                    </div>
+                    <div class="card__content">
+                      <div class="card__text">
+                        <h3 class="card__title">Starburst XXXTreme</h3>
+                        <p class="card__firm">StarBurst inc.</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="card card-1-3 card-mob-1-2">
+                  <a href="#" class="card__inner">
+                    <div class="card__image-container">
+                      <img src="images/game6.jpg" alt="Black Diamond image" class="card__image">
+                    </div>
+                    <div class="card__content">
+                      <div class="card__text">
+                        <h3 class="card__title">Black Diamond</h3>
+                        <p class="card__firm">RushGameStudio</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="games__col">
+              <ul class="games__tiles">
+                <li class="card card--alt card-1-2 card-mob-fw">
+                  <div class="card__image-container card__image-container--abs">
+                    <img src="images/game7.jpg" alt="Dynamite Riches Megaways image" class="card__image">
+                  </div>
+                  <div class="card__content card__content--alt">
+                    <div class="card__text card__text--alt">
+                      <h3 class="card__title card__title--alt">Dynamite Riches Megaways</h3>
+                      <p class="card__descr">Miners revealed a gain of €46,672 for Sandra M.! You too, dynamite the reels of the Red Tiger Daily Jackpot machines</p>
+                    </div>
+                    <a href="#" class="card__button card__button--mt">Play now</a>
+                  </div>
+                </li>
+                <li class="card card--alt card-1-2 card-mob-fw">
+                  <div class="card__image-container card__image-container--abs">
+                    <img src="images/game8.jpg" alt="Gator Gold Deluxe Gigablox image" class="card__image">
+                  </div>
+                  <div class="card__content card__content--alt">
+                    <div class="card__text card__text--alt">
+                      <h3 class="card__title card__title--alt">Gator Gold Deluxe Gigablox</h3>
+                      <p class="card__descr">These swamps conceal many dangers but especially precious treasures. Will you be able to find them?</p>
+                    </div>
+                    <a href="#" class="card__button card__button--mt">Play now</a>
+                  </div>
+                </li>
+                <li class="card card--fw">
+                  <div class="card__image-container">
+                    <img src="images/banner_promo.jpeg" alt="Our Deals image" class="card__image">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__text">
+                      <h3 class="card__title">Our deals are not to be missed</h3>
+                      <p class="card__firm">Discover a wide range of weekly promotions</p>
+                    </div>
+                    <a href="#" class="card__button">Read more</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="games__note">* We don't offer opportunities to play for real money. Our games are free demo. All games were invented for entertainment purposes only and do not offer real money prizes.</p>
+        </div>
+      </section>
+      <section class="contact section" id="contact">
+        <div class="section__inner contact__inner">
+          <div class="section__row">
+            <div class="section__header">
+              <h2 class="section__title">Contact Us</h2>
+              <p class="section__subtitle">If you have some questions, send us a message</p>
+            </div>
+          </div>
+          <form method="POST" action="" class="form form--col contact__form">
+            <input class="form__input" type="text" name="fname" id="fname2" placeholder="Firstname" required>
+            <input class="form__input" type="text" name="email" id="email2" placeholder="Email Address" required>
+            <textarea class="form__input form__textarea" rows="4" placeholder="Your message here..."></textarea>
+            <div class="form__row">
+              <fieldset class="form__terms">
+                <label for="terms2" class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="terms2" id="terms2" required>
+                  <span class="checkbox__check"></span>
+                </label>
+                <span class="form__accept">I Accept The <a href="#" class="form__link">Privacy Policy</a></span>
+              </fieldset>
+              <button type="submit" class="button button--grad">Send</button>
+            </div>
+          </form>
+          <img src="images/image.png" alt="Bonus image" class="contact__decor">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <menu class="footer__links links">
+            <li class="links__item"><a href="#" class="links__link">Disclaimer</a></li>
+            <li class="links__item"><a href="#" class="links__link">Privacy Policy</a></li>
+            <li class="links__item"><a href="#" class="links__link">Terms of Conditions</a></li>
+          </menu>
+          <p class="footer__text footer__text--center">This site does not provide any form of online gambling and delivers information for entertainment and research purposes only. The games listed by Topwinningslots are intended for adult audience entertainment (underage visitors are restricted) and do not offer real money or prizes. Practicing online free games does not imply future success at 'real money' gambling.</p>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__text footer__text--light">2022 | &copy; Lorem Inc. All Rights Reserved</p>
+          <menu class="footer__socials socials">
+            <li class="socials__item"><a href="#" class="socials__link"><img src="images/icon-twitter.svg" alt="Twitter icon" class="socials__icon"></a></li>
+            <li class="socials__item"><a href="#" class="socials__link"><img src="images/icon-fb.svg" alt="Facebook icon" class="socials__icon"></a></li>
+            <li class="socials__item"><a href="#" class="socials__link"><img src="images/icon-ig.svg" alt="Instagram icon" class="socials__icon"></a></li>
+          </menu>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="modal">
+      <div class="modal__content tabforms">
+        <div class="tabforms__tabs tabs">
+          <button type="button" class="tabs__button tabsBtn" data-tab="signup">Sign Up</button>
+          <button type="button" class="tabs__button tabsBtn" data-tab="login">Login</button>
+        </div>
+        <div id="signup" class="tabforms__form tabContent">
+          <form method="POST" action="/signup" class="form">
+            <input class="form__input" type="text" name="fname3" id="fname3" placeholder="Firstname" required>
+            <input class="form__input" type="text" name="lname3" id="lname3" placeholder="Lastname" required>
+            <input class="form__input" type="email" name="email3" id="email3" placeholder="Email Address" required>
+            <fieldset class="form__line">
+              <input class="form__input form__input--1-2 form__input-mob-fw" type="password" name="password" id="password" placeholder="Password" required>
+              <input class="form__input form__input--1-2 form__input-mob-fw" type="password" name="password-confirm" id="password-confirm" placeholder="Confirm Password" required>
+            </fieldset>
+            <fieldset class="form__terms form__terms--center">
+              <label for="terms3" class="checkbox">
+                <input class="checkbox__input" type="checkbox" name="terms3" id="terms3" required>
+                <span class="checkbox__check"></span>
+              </label>
+              <span class="form__accept">I Accept The <a href="#" class="form__link">Privacy Policy</a></span>
+            </fieldset>
+            <button type="submit" class="button button--grad form__button">Join Now</button>
+          </form>
+        </div>
+        <div id="login" class="tabforms__form tabContent">
+          <form method="POST" action="/login" class="form">
+            <input class="form__input" type="email" name="email4" id="email4" placeholder="Email Address" required>
+            <input class="form__input" type="password" name="password" id="password2" placeholder="Password" required>
+            <button type="submit" class="button button--grad form__button">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
